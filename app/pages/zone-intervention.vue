@@ -1,7 +1,7 @@
 <script setup lang="ts">
 usePageSeo({
-  title: 'Zone d\'intervention – Maçon à Tours, Indre-et-Loire (37) et alentours',
-  description: 'O.M.T intervient à Tours, Joué-lès-Tours, Saint-Cyr-sur-Loire, Saint-Avertin, Amboise, Chinon, Loches et dans toute l\'Indre-et-Loire, la région Centre-Val de Loire et les Pays de la Loire.',
+  title: 'Zone d\'intervention – Maçon à Tours et en Indre-et-Loire',
+  description: 'O.M.T intervient à Tours, Joué-lès-Tours, Saint-Cyr-sur-Loire, Amboise, Chinon, Loches, dans toute l\'Indre-et-Loire, en Centre-Val de Loire et Pays de la Loire.',
   path: '/zone-intervention',
   schema: [breadcrumbSchema([{ name: 'Zone d\'intervention', path: '/zone-intervention' }])],
 })

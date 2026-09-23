@@ -15,7 +15,7 @@ const todo = '[à compléter]'
       <div class="container legal">
         <h2>Éditeur du site</h2>
         <p>
-          {{ site.name }} (O.M.T)<br>
+          O.M.T – {{ site.fullName }}<br>
           Responsable de la publication : {{ site.legal.owner || todo }}<br>
           SIRET : {{ site.legal.siret || todo }}<br>
           Adresse : {{ site.legal.address || todo }}, {{ site.postalCode }} {{ site.city }}<br>

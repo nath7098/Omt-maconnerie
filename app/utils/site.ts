@@ -6,6 +6,8 @@
 export const site = {
   name: 'O.M.T Maçonnerie',
   shortName: 'O.M.T',
+  // O.M.T = Oliveira Maçonnerie Tours
+  fullName: 'Oliveira Maçonnerie Tours',
   tagline: 'Maçonnerie, terrassement et ravalement de façade à Tours',
   email: 'ant20220892@gmail.com',
   phone: '07 65 51 29 66',
@@ -18,6 +20,8 @@ export const site = {
   // À compléter dès que les liens sont disponibles (ils seront ajoutés aux données structurées « sameAs »)
   facebookUrl: '',
   googleBusinessUrl: '',
+  // Code de vérification Google Search Console (balise « google-site-verification »), à coller ici
+  googleSiteVerification: '',
   // Mentions légales — à compléter
   legal: {
     owner: '',
@@ -34,6 +38,7 @@ export interface Service {
   title: string
   metaTitle: string
   metaDescription: string
+  ogImage: string
   icon: 'wall' | 'shovel' | 'facade'
   excerpt: string
   intro: string[]
@@ -48,10 +53,11 @@ export const services: Service[] = [
     title: 'Maçonnerie générale à Tours',
     metaTitle: 'Maçon à Tours (37) – Maçonnerie générale, extension, murs',
     metaDescription: 'O.M.T, artisan maçon à Tours : construction, extension, murs, clôtures, dalles, ouvertures et rénovation en Indre-et-Loire. Devis gratuit au 07 65 51 29 66.',
+    ogImage: '/images/og/og-maconnerie.jpg',
     icon: 'wall',
     excerpt: 'Construction, extension, murs de clôture, dalles, terrasses en travertin, ouvertures et rénovation : un travail soigné, du gros œuvre aux finitions.',
     intro: [
-      'Artisan maçon basé à Tours, O.M.T réalise tous vos travaux de maçonnerie générale, pour les particuliers comme pour les professionnels, en neuf comme en rénovation.',
+      'Artisan maçon basé à Tours, O.M.T (Oliveira Maçonnerie Tours) réalise tous vos travaux de maçonnerie générale, pour les particuliers comme pour les professionnels, en neuf comme en rénovation.',
       'Parpaing, brique, pierre ou béton : nous choisissons avec vous la technique la plus adaptée à votre projet, à votre bâti et à votre budget, dans le respect des règles de l\'art.',
     ],
     items: [
@@ -73,7 +79,8 @@ export const services: Service[] = [
     name: 'Terrassement',
     title: 'Terrassement à Tours et en Indre-et-Loire',
     metaTitle: 'Terrassement à Tours (37) – Fouilles, nivellement, VRD',
-    metaDescription: 'Travaux de terrassement à Tours et en Indre-et-Loire : décaissement, fouilles de fondations, nivellement, tranchées, préparation de terrain. Devis gratuit O.M.T.',
+    metaDescription: 'Terrassement à Tours et en Indre-et-Loire : décaissement, fouilles de fondations, nivellement, tranchées, allées en enrobé. Devis gratuit O.M.T.',
+    ogImage: '/images/og/og-terrassement.jpg',
     icon: 'shovel',
     excerpt: 'Décaissement, fouilles, nivellement, tranchées et préparation de terrain avant construction ou aménagement extérieur.',
     intro: [
@@ -98,8 +105,9 @@ export const services: Service[] = [
     slug: 'ravalement-facade-tours',
     name: 'Ravalement de façade',
     title: 'Ravalement de façade à Tours',
-    metaTitle: 'Ravalement de façade à Tours (37) – Enduit, nettoyage, fissures',
-    metaDescription: 'Ravalement de façade à Tours et en Indre-et-Loire : nettoyage, traitement des fissures, enduit, rejointoiement de pierre de tuffeau. Devis gratuit O.M.T.',
+    metaTitle: 'Ravalement de façade à Tours (37) – Enduit, décor pierre',
+    metaDescription: 'Ravalement de façade à Tours et en Indre-et-Loire : enduit, décor pierre, traitement des fissures, nettoyage, pierre de tuffeau. Devis gratuit O.M.T.',
+    ogImage: '/images/og/og-ravalement.jpg',
     icon: 'facade',
     excerpt: 'Nettoyage, traitement des fissures, enduits, décor pierre et rejointoiement : redonnez de l\'éclat à votre maison et protégez vos murs.',
     intro: [

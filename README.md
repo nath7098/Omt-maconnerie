@@ -1,4 +1,4 @@
-# O.M.T Maçonnerie Tours — site vitrine (Nuxt 4)
+# O.M.T – Oliveira Maçonnerie Tours — site vitrine (Nuxt 4)
 
 Site statique, pré-généré en HTML pour un référencement Google optimal.
 
@@ -21,7 +21,8 @@ elle sert aux URL canoniques, au sitemap, à `robots.txt` et aux données struct
 | Téléphone, e-mail, Facebook, fiche Google, mentions légales | `app/utils/site.ts` (objet `site`) |
 | Textes des prestations et FAQ | `app/utils/site.ts` (`services`) |
 | Communes desservies | `app/utils/site.ts` (`zones`) |
-| Photos des réalisations | `public/images/realisations/` + `app/utils/realisations.ts` |
+| Photos des réalisations | `public/images/realisations/` + `app/utils/realisations.ts`, puis `npm run images` (miniatures) |
+| Vérification Google Search Console | `site.googleSiteVerification` dans `app/utils/site.ts` |
 
 ## SEO intégré
 
@@ -29,7 +30,8 @@ elle sert aux URL canoniques, au sitemap, à `robots.txt` et aux données struct
 - Balises title / description / canonical / Open Graph / Twitter sur chaque page
 - Données structurées schema.org : `HomeAndConstructionBusiness` (entreprise locale), `Service`, `FAQPage`, `BreadcrumbList`
 - `sitemap.xml` et `robots.txt` générés automatiquement
-- Aucune police ni script externe : chargement très rapide (Core Web Vitals)
+- Aucune police ni script externe, miniatures d'images en WebP : Lighthouse SEO 100, performances 97–99
+- Image de partage (Open Graph) propre à chaque prestation, page 404 en français
 
 ## Après la mise en ligne
 

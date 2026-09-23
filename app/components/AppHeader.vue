@@ -21,8 +21,8 @@ const links = [
       </div>
     </div>
     <div class="container header__inner">
-      <NuxtLink to="/" class="header__logo" aria-label="O.M.T Maçonnerie Tours – Accueil">
-        <img src="/images/logo-omt.webp" alt="Logo O.M.T Maçonnerie Tours" width="160" height="100">
+      <NuxtLink to="/" class="header__logo" aria-label="O.M.T – Oliveira Maçonnerie Tours, accueil">
+        <img src="/images/logo-omt-header.webp" alt="Logo O.M.T – Oliveira Maçonnerie Tours" width="120" height="76">
       </NuxtLink>
 
       <nav :class="['nav', { 'nav--open': open }]" aria-label="Navigation principale">
@@ -33,7 +33,7 @@ const links = [
         </ul>
       </nav>
 
-      <a :href="`tel:${site.phoneIntl}`" class="btn btn--primary header__call">
+      <a :href="`tel:${site.phoneIntl}`" class="btn btn--primary header__call" :aria-label="`Appeler le ${site.phone}`">
         <AppIcon name="phone" /><span>{{ site.phone }}</span>
       </a>
       <button class="burger" :aria-expanded="open" aria-controls="menu" @click="open = !open">

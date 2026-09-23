@@ -1,8 +1,9 @@
 <script setup lang="ts">
 usePageSeo({
-  title: 'Nos réalisations – Maçonnerie, terrassement, façades à Tours',
+  title: 'Réalisations – Maçonnerie & façades à Tours',
   description: 'Découvrez les chantiers réalisés par O.M.T à Tours et en Indre-et-Loire : maçonnerie, terrassement et ravalement de façade. Photos avant / après.',
   path: '/realisations',
+  image: '/images/og/og-realisations.jpg',
   schema: [
     breadcrumbSchema([{ name: 'Réalisations', path: '/realisations' }]),
     ...(realisations.length
@@ -25,7 +26,7 @@ usePageSeo({
     />
     <section class="section">
       <div class="container">
-        <RealisationGallery />
+        <RealisationGallery :eager="2" />
       </div>
     </section>
     <CtaBanner title="Vous avez un projet similaire ?" />

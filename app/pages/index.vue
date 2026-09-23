@@ -1,14 +1,14 @@
 <script setup lang="ts">
 const faq = [
-  { q: 'Quels travaux réalise O.M.T ?', a: 'O.M.T est une entreprise de maçonnerie basée à Tours. Nous réalisons la maçonnerie générale (construction, extension, murs, dalles, ouvertures, rénovation), le terrassement et le ravalement de façade.' },
+  { q: 'Quels travaux réalise O.M.T ?', a: 'O.M.T (Oliveira Maçonnerie Tours) est une entreprise de maçonnerie basée à Tours. Nous réalisons la maçonnerie générale (construction, extension, murs, dalles, ouvertures, rénovation), le terrassement et le ravalement de façade.' },
   { q: 'Dans quelles villes intervenez-vous ?', a: 'Nous intervenons à Tours et dans toute l\'Indre-et-Loire (Joué-lès-Tours, Saint-Cyr-sur-Loire, Saint-Avertin, Chambray-lès-Tours, Amboise…), ainsi que dans la région Centre-Val de Loire et en Pays de la Loire.' },
   { q: 'Le devis est-il gratuit ?', a: `Oui, le déplacement et le devis sont gratuits et sans engagement. Appelez le ${site.phone} ou écrivez-nous via le formulaire de contact.` },
   { q: 'Travaillez-vous pour les particuliers et les professionnels ?', a: 'Oui, nous intervenons pour les particuliers, les professionnels, les syndics et les collectivités, en neuf comme en rénovation.' },
 ]
 
 usePageSeo({
-  title: 'O.M.T Maçonnerie Tours – Maçon, terrassement & ravalement de façade (37)',
-  description: 'O.M.T, entreprise de maçonnerie à Tours : maçonnerie générale, terrassement et ravalement de façade en Indre-et-Loire, Centre-Val de Loire et Pays de la Loire. Devis gratuit au 07 65 51 29 66.',
+  title: 'O.M.T Oliveira Maçonnerie – Maçon à Tours (37)',
+  description: 'O.M.T – Oliveira Maçonnerie Tours : maçonnerie, terrassement et ravalement de façade à Tours et en Indre-et-Loire. Devis gratuit au 07 65 51 29 66.',
   path: '/',
   schema: [faqSchema(faq)],
 })
@@ -29,7 +29,7 @@ const strengths = [
           <p class="eyebrow">Entreprise de maçonnerie à Tours</p>
           <h1>Votre <span class="accent">maçon à Tours</span> pour construire, rénover et embellir</h1>
           <p class="lead">
-            <strong>O.M.T</strong> réalise vos travaux de <NuxtLink to="/maconnerie-tours">maçonnerie</NuxtLink>,
+            <strong>O.M.T – Oliveira Maçonnerie Tours</strong> réalise vos travaux de <NuxtLink to="/maconnerie-tours">maçonnerie</NuxtLink>,
             de <NuxtLink to="/terrassement-tours">terrassement</NuxtLink> et de
             <NuxtLink to="/ravalement-facade-tours">ravalement de façade</NuxtLink> à Tours, en Indre-et-Loire,
             en région Centre-Val de Loire et en Pays de la Loire.
@@ -45,7 +45,13 @@ const strengths = [
           </ul>
         </div>
         <figure class="hero__photo">
-          <img src="/images/realisations/ravalement-facade-enduit-decor-pierre-avant-apres.webp" alt="Avant / après d'un ravalement de façade en enduit décor pierre réalisé par O.M.T" width="1080" height="1080" fetchpriority="high">
+          <img
+            src="/images/realisations/ravalement-facade-enduit-decor-pierre-avant-apres-thumb.webp"
+            srcset="/images/realisations/ravalement-facade-enduit-decor-pierre-avant-apres-thumb.webp 800w, /images/realisations/ravalement-facade-enduit-decor-pierre-avant-apres.webp 1080w"
+            sizes="(max-width: 900px) 92vw, 440px"
+            alt="Avant / après d'un ravalement de façade en enduit décor pierre réalisé par O.M.T"
+            width="1080" height="1080" fetchpriority="high"
+          >
           <figcaption>Avant / après – ravalement en enduit décor pierre</figcaption>
         </figure>
       </div>
@@ -68,7 +74,7 @@ const strengths = [
           <p class="eyebrow">Pourquoi O.M.T</p>
           <h2>Un artisan maçon de confiance en Touraine</h2>
           <p>
-            Implantée à Tours, <strong>O.M.T Maçonnerie</strong> accompagne les particuliers et les professionnels
+            Implantée à Tours, <strong>O.M.T – Oliveira Maçonnerie Tours</strong> accompagne les particuliers et les professionnels
             dans leurs projets de construction et de rénovation. Extension de maison, mur de clôture, dalle béton,
             préparation de terrain ou ravalement de façade : chaque chantier est réalisé avec rigueur et
             dans le respect du bâti tourangeau.

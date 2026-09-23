@@ -7,13 +7,17 @@
     "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "images": "node scripts/optimize-images.mjs"
   },
   "dependencies": {
-    "nuxt": "^4.5.2",
-    "@nuxtjs/sitemap": "^8.5.1",
     "@nuxtjs/robots": "^6.2.3",
+    "@nuxtjs/sitemap": "^8.5.1",
+    "nuxt": "^4.5.2",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.4"
   }
 }

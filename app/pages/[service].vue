@@ -11,6 +11,7 @@ usePageSeo({
   title: service.metaTitle,
   description: service.metaDescription,
   path,
+  image: service.ogImage,
   schema: [
     {
       '@type': 'Service',

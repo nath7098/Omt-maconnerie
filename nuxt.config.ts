@@ -9,7 +9,7 @@ export default defineNuxtConfig({
 
   site: {
     url: siteUrl,
-    name: 'O.M.T Maçonnerie Tours',
+    name: 'O.M.T – Oliveira Maçonnerie Tours',
     defaultLocale: 'fr',
     trailingSlash: false,
   },

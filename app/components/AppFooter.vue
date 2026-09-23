@@ -6,8 +6,8 @@ const year = new Date().getFullYear()
   <footer class="footer bricks">
     <div class="container footer__grid">
       <div>
-        <img src="/images/logo-omt-dark.webp" alt="O.M.T Maçonnerie Tours" width="200" height="131" loading="lazy" class="footer__logo">
-        <p>Artisan maçon à Tours : maçonnerie générale, terrassement et ravalement de façade en Indre-et-Loire et dans les régions voisines.</p>
+        <img src="/images/logo-omt-dark.webp" alt="O.M.T – Oliveira Maçonnerie Tours" width="200" height="131" loading="lazy" class="footer__logo">
+        <p><strong>O.M.T – {{ site.fullName }}</strong>, artisan maçon à Tours : maçonnerie générale, terrassement et ravalement de façade en Indre-et-Loire et dans les régions voisines.</p>
       </div>
       <div>
         <p class="footer__title">Prestations</p>
@@ -37,7 +37,7 @@ const year = new Date().getFullYear()
       </div>
     </div>
     <div class="container footer__bottom">
-      <span>© {{ year }} {{ site.name }} – Maçon à Tours</span>
+      <span>© {{ year }} O.M.T – {{ site.fullName }}</span>
       <NuxtLink to="/mentions-legales">Mentions légales</NuxtLink>
     </div>
   </footer>

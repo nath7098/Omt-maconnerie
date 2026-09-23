@@ -1,9 +1,13 @@
 <script setup lang="ts">
-const props = defineProps<{ limit?: number, service?: string }>()
+/** eager : nombre de photos chargées immédiatement (celles visibles sans défiler) */
+const props = withDefaults(defineProps<{ limit?: number, service?: string, eager?: number }>(), { eager: 0 })
 const items = computed(() => {
   const list = props.service ? realisations.filter(r => r.services.includes(props.service as ServiceName)) : realisations
   return props.limit ? list.slice(0, props.limit) : list
 })
+
+// Miniature générée par « npm run images »
+const thumb = (src: string) => src.replace(/\.webp$/, '-thumb.webp')
 
 const dialog = ref<HTMLDialogElement>()
 const current = ref<Realisation>()
@@ -15,9 +19,15 @@ function open(r: Realisation) {
 
 <template>
   <div v-if="items.length" class="gallery">
-    <figure v-for="r in items" :key="r.src" class="gallery__item">
+    <figure v-for="(r, i) in items" :key="r.src" class="gallery__item">
       <button type="button" class="gallery__btn" :aria-label="`Agrandir : ${r.title}`" @click="open(r)">
-        <img :src="r.src" :alt="r.alt" :width="r.width" :height="r.height" loading="lazy" decoding="async">
+        <img
+          :src="thumb(r.src)"
+          :srcset="`${thumb(r.src)} 800w, ${r.src} ${r.width}w`"
+          sizes="(max-width: 640px) 92vw, 320px"
+          :alt="r.alt" :width="r.width" :height="r.height" decoding="async"
+          :loading="i < eager ? 'eager' : 'lazy'" :fetchpriority="i === 0 && eager ? 'high' : undefined"
+        >
       </button>
       <figcaption>
         <strong>{{ r.title }}</strong>
