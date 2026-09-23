@@ -5,6 +5,7 @@ if (!service) throw createError({ statusCode: 404, statusMessage: 'Page introuva
 
 const path = `/${service.slug}`
 const others = services.filter(s => s.slug !== service.slug)
+const photos = realisations.some(r => r.services.includes(service.name as ServiceName))
 
 usePageSeo({
   title: service.metaTitle,
@@ -75,7 +76,18 @@ usePageSeo({
       </div>
     </section>
 
-    <section class="section">
+    <section v-if="photos" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Réalisations</p>
+          <h2>Nos chantiers de {{ service.name.toLowerCase() }}</h2>
+        </div>
+        <RealisationGallery :service="service.name" />
+        <p class="more"><NuxtLink to="/realisations" class="btn btn--dark">Toutes nos réalisations <AppIcon name="arrow" /></NuxtLink></p>
+      </div>
+    </section>
+
+    <section :class="['section', { 'section--paper': photos }]">
       <div class="container">
         <div class="section-head section-head--center">
           <p class="eyebrow">FAQ</p>
@@ -85,7 +97,7 @@ usePageSeo({
       </div>
     </section>
 
-    <section class="section section--paper">
+    <section :class="['section', { 'section--paper': !photos }]">
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">Découvrez aussi</p>
@@ -109,6 +121,7 @@ usePageSeo({
 .intro { display: grid; grid-template-columns: 1.6fr 1fr; gap: 48px; align-items: start; }
 .aside { position: sticky; top: 140px; }
 .card p { color: var(--muted); }
+.more { margin-top: 32px; }
 .other { text-decoration: none; transition: transform .2s; }
 .other:hover { transform: translateY(-3px); }
 .other h3 { color: var(--charcoal); }

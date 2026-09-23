@@ -85,7 +85,7 @@ export const services: Service[] = [
       { title: 'Fouilles de fondations', text: 'Fouilles en rigole ou en pleine masse pour maison, extension, garage ou mur.' },
       { title: 'Nivellement & remblai', text: 'Mise à niveau, remblaiement et compactage pour un sol stable.' },
       { title: 'Tranchées & réseaux', text: 'Tranchées pour réseaux (eau, électricité, évacuations), drainage périphérique.' },
-      { title: 'Préparation de terrain', text: 'Débroussaillage, préparation de plateforme et accès de chantier.' },
+      { title: 'Allées & accès', text: 'Préparation de plateforme, pose de bordures, couche de forme et allées en gravier ou en enrobé.' },
       { title: 'Évacuation des terres', text: 'Chargement et évacuation des déblais vers les filières adaptées.' },
     ],
     faq: [
@@ -101,13 +101,13 @@ export const services: Service[] = [
     metaTitle: 'Ravalement de façade à Tours (37) – Enduit, nettoyage, fissures',
     metaDescription: 'Ravalement de façade à Tours et en Indre-et-Loire : nettoyage, traitement des fissures, enduit, rejointoiement de pierre de tuffeau. Devis gratuit O.M.T.',
     icon: 'facade',
-    excerpt: 'Nettoyage, traitement des fissures, enduits et rejointoiement : redonnez de l\'éclat à votre maison et protégez vos murs.',
+    excerpt: 'Nettoyage, traitement des fissures, enduits, décor pierre et rejointoiement : redonnez de l\'éclat à votre maison et protégez vos murs.',
     intro: [
       'La façade protège votre maison des intempéries et fait sa première impression. O.M.T assure le ravalement complet de vos façades à Tours et dans la région.',
       'Enduit traditionnel à la chaux, enduit monocouche, rejointoiement de pierre de tuffeau : nous respectons le caractère de votre bâti, qu\'il soit ancien ou récent.',
     ],
     items: [
-      { title: 'Diagnostic de façade', text: 'Examen de l\'état des murs, des fissures et des supports avant travaux.' },
+      { title: 'Enduit décor pierre', text: 'Façade effet pierre sculptée à la main, chaînes d\'angle, encadrements et motifs décoratifs.' },
       { title: 'Nettoyage', text: 'Nettoyage et démoussage des façades, préparation des supports.' },
       { title: 'Traitement des fissures', text: 'Ouverture, traitement et rebouchage des fissures pour une façade saine.' },
       { title: 'Enduits', text: 'Enduit à la chaux, enduit monocouche gratté ou taloché, finitions au choix.' },

@@ -44,9 +44,10 @@ const strengths = [
             <li><AppIcon name="check" /> Neuf & rénovation</li>
           </ul>
         </div>
-        <div class="hero__logo">
-          <img src="/images/logo-omt-dark.webp" alt="O.M.T Maçonnerie Tours" width="400" height="261" fetchpriority="high">
-        </div>
+        <figure class="hero__photo">
+          <img src="/images/realisations/ravalement-facade-enduit-decor-pierre-avant-apres.webp" alt="Avant / après d'un ravalement de façade en enduit décor pierre réalisé par O.M.T" width="1080" height="1080" fetchpriority="high">
+          <figcaption>Avant / après – ravalement en enduit décor pierre</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -136,7 +137,9 @@ const strengths = [
 .hero__badges { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px 24px; font-weight: 600; font-size: .95rem; }
 .hero__badges li { display: inline-flex; align-items: center; gap: 8px; }
 .hero__badges svg { width: 18px; height: 18px; color: var(--orange); }
-.hero__logo img { width: 100%; max-width: 420px; margin-inline: auto; filter: drop-shadow(0 20px 40px rgb(0 0 0 / .4)); border-radius: 8px; }
+.hero__photo { margin: 0; justify-self: end; max-width: 460px; background: var(--white); padding: 10px 10px 0; border-radius: 10px; box-shadow: 0 24px 60px rgb(0 0 0 / .45); transform: rotate(1.5deg); }
+.hero__photo img { border-radius: 6px; }
+.hero__photo figcaption { color: var(--muted); font-size: .85rem; font-weight: 600; text-align: center; padding: 10px 0; }
 .about { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
 .about a:not(.btn) { color: var(--orange-dark); }
 .strengths .card { padding: 22px; }
@@ -149,7 +152,6 @@ const strengths = [
 .center { text-align: center; margin-top: 32px; }
 @media (max-width: 900px) {
   .hero__inner, .about, .zone { grid-template-columns: 1fr; }
-  .hero__logo { order: -1; }
-  .hero__logo img { max-width: 260px; }
+  .hero__photo { justify-self: center; transform: none; }
 }
 </style>
