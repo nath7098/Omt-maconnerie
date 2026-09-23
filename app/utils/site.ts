@@ -49,7 +49,7 @@ export const services: Service[] = [
     metaTitle: 'Maçon à Tours (37) – Maçonnerie générale, extension, murs',
     metaDescription: 'O.M.T, artisan maçon à Tours : construction, extension, murs, clôtures, dalles, ouvertures et rénovation en Indre-et-Loire. Devis gratuit au 07 65 51 29 66.',
     icon: 'wall',
-    excerpt: 'Construction, extension, murs de clôture, dalles, ouvertures et rénovation : un travail soigné, du gros œuvre aux finitions.',
+    excerpt: 'Construction, extension, murs de clôture, dalles, terrasses en travertin, ouvertures et rénovation : un travail soigné, du gros œuvre aux finitions.',
     intro: [
       'Artisan maçon basé à Tours, O.M.T réalise tous vos travaux de maçonnerie générale, pour les particuliers comme pour les professionnels, en neuf comme en rénovation.',
       'Parpaing, brique, pierre ou béton : nous choisissons avec vous la technique la plus adaptée à votre projet, à votre bâti et à votre budget, dans le respect des règles de l\'art.',
@@ -57,7 +57,7 @@ export const services: Service[] = [
     items: [
       { title: 'Construction & extension', text: 'Fondations, élévation de murs, agrandissement de maison, garage, abri ou annexe.' },
       { title: 'Murs & clôtures', text: 'Murs de clôture, murets, murs de soutènement, piliers de portail, chaperons.' },
-      { title: 'Dalles & chapes', text: 'Dalles béton, chapes, terrasses maçonnées, allées et plots.' },
+      { title: 'Dalles, terrasses & allées', text: 'Dalles béton, chapes, terrasses, allées et marches en pierre naturelle (travertin).' },
       { title: 'Ouvertures & reprises', text: 'Création ou agrandissement d\'ouvertures, pose de linteaux, reprises en sous-œuvre.' },
       { title: 'Rénovation', text: 'Rénovation de murs anciens, rejointoiement de pierre, restauration du bâti tourangeau.' },
       { title: 'Petits travaux', text: 'Réparations, seuils, escaliers extérieurs, jardinières et aménagements divers.' },
