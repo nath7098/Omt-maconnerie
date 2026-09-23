@@ -59,7 +59,7 @@ export const services: Service[] = [
       { title: 'Murs & clôtures', text: 'Murs de clôture, murets, murs de soutènement, piliers de portail, chaperons.' },
       { title: 'Dalles, terrasses & allées', text: 'Dalles béton, chapes, terrasses, allées et marches en pierre naturelle (travertin).' },
       { title: 'Ouvertures & reprises', text: 'Création ou agrandissement d\'ouvertures, pose de linteaux, reprises en sous-œuvre.' },
-      { title: 'Rénovation', text: 'Rénovation de murs anciens, rejointoiement de pierre, restauration du bâti tourangeau.' },
+      { title: 'Rénovation & parement pierre', text: 'Rénovation de murs anciens, rejointoiement, parement pierre intérieur et restauration du bâti tourangeau.' },
       { title: 'Petits travaux', text: 'Réparations, seuils, escaliers extérieurs, jardinières et aménagements divers.' },
     ],
     faq: [

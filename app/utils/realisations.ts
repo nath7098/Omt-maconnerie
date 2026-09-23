@@ -42,6 +42,15 @@ export const realisations: Realisation[] = [
     height: 1200,
   },
   {
+    src: '/images/realisations/couloir-parement-pierre-avant-apres.webp',
+    alt: 'Avant / après d\'un couloir : murs blancs habillés de parement en pierre naturelle',
+    title: 'Couloir habillé de parement pierre',
+    description: 'Habillage des murs d\'un couloir en parement pierre : un intérieur chaleureux au cachet de maison de caractère, en harmonie avec le sol en travertin.',
+    services: ['Maçonnerie'],
+    width: 1366,
+    height: 1000,
+  },
+  {
     src: '/images/realisations/facade-enduit-decor-pierre-pignon-dalle-beton.webp',
     alt: 'Pignon en enduit décor pierre avec médaillon fleur de lys, encadrements des ouvertures et dalle béton',
     title: 'Façade décor pierre, pignon et dalle béton',
@@ -85,14 +94,5 @@ export const realisations: Realisation[] = [
     services: ['Maçonnerie'],
     width: 1200,
     height: 1600,
-  },
-  {
-    src: '/images/realisations/couloir-dallage-travertin.webp',
-    alt: 'Couloir intérieur avec sol en dallage travertin posé en opus',
-    title: 'Sol intérieur en travertin',
-    description: 'Pose d\'un dallage en travertin en opus dans un couloir, avec plinthes assorties.',
-    services: ['Maçonnerie'],
-    width: 1170,
-    height: 1560,
   },
 ]
