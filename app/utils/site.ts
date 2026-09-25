@@ -8,7 +8,8 @@ export const site = {
   shortName: 'O.M.T',
   // O.M.T = Oliveira Maçonnerie Tours
   fullName: 'Oliveira Maçonnerie Tours',
-  tagline: 'Maçonnerie, terrassement et ravalement de façade à Tours',
+  tagline: 'Maçonnerie, terrassement, ravalement de façade et carrelage à Tours',
+  slogan: 'Construire aujourd\'hui, durablement demain',
   email: 'ant20220892@gmail.com',
   phone: '07 65 51 29 66',
   phoneIntl: '+33765512966',
@@ -39,7 +40,7 @@ export interface Service {
   metaTitle: string
   metaDescription: string
   ogImage: string
-  icon: 'wall' | 'shovel' | 'facade'
+  icon: 'maconnerie' | 'terrassement' | 'ravalement' | 'carrelage'
   excerpt: string
   intro: string[]
   items: { title: string, text: string }[]
@@ -54,7 +55,7 @@ export const services: Service[] = [
     metaTitle: 'Maçon à Tours (37) – Maçonnerie générale, extension, murs',
     metaDescription: 'O.M.T, artisan maçon à Tours : construction, extension, murs, clôtures, dalles, ouvertures et rénovation en Indre-et-Loire. Devis gratuit au 07 65 51 29 66.',
     ogImage: '/images/og/og-maconnerie.jpg',
-    icon: 'wall',
+    icon: 'maconnerie',
     excerpt: 'Construction, extension, murs de clôture, dalles, terrasses en travertin, ouvertures et rénovation : un travail soigné, du gros œuvre aux finitions.',
     intro: [
       'Artisan maçon basé à Tours, O.M.T (Oliveira Maçonnerie Tours) réalise tous vos travaux de maçonnerie générale, pour les particuliers comme pour les professionnels, en neuf comme en rénovation.',
@@ -81,7 +82,7 @@ export const services: Service[] = [
     metaTitle: 'Terrassement à Tours (37) – Fouilles, nivellement, VRD',
     metaDescription: 'Terrassement à Tours et en Indre-et-Loire : décaissement, fouilles de fondations, nivellement, tranchées, allées en enrobé. Devis gratuit O.M.T.',
     ogImage: '/images/og/og-terrassement.jpg',
-    icon: 'shovel',
+    icon: 'terrassement',
     excerpt: 'Décaissement, fouilles, nivellement, tranchées et préparation de terrain avant construction ou aménagement extérieur.',
     intro: [
       'Un terrassement bien réalisé est la base de tout ouvrage durable. O.M.T prépare votre terrain avant construction, extension, terrasse ou aménagement extérieur.',
@@ -108,7 +109,7 @@ export const services: Service[] = [
     metaTitle: 'Ravalement de façade à Tours (37) – Enduit, décor pierre',
     metaDescription: 'Ravalement de façade à Tours et en Indre-et-Loire : enduit, décor pierre, traitement des fissures, nettoyage, pierre de tuffeau. Devis gratuit O.M.T.',
     ogImage: '/images/og/og-ravalement.jpg',
-    icon: 'facade',
+    icon: 'ravalement',
     excerpt: 'Nettoyage, traitement des fissures, enduits, décor pierre et rejointoiement : redonnez de l\'éclat à votre maison et protégez vos murs.',
     intro: [
       'La façade protège votre maison des intempéries et fait sa première impression. O.M.T assure le ravalement complet de vos façades à Tours et dans la région.',
@@ -126,6 +127,33 @@ export const services: Service[] = [
       { q: 'Tous les combien faut-il ravaler sa façade ?', a: 'En moyenne tous les 10 ans. Certaines communes peuvent imposer un ravalement ; nous vous renseignons lors du devis.' },
       { q: 'Faut-il une déclaration préalable pour un ravalement ?', a: 'Dans de nombreux cas oui, notamment en secteur protégé à Tours. Nous vous accompagnons dans la démarche.' },
       { q: 'Travaillez-vous la pierre de tuffeau ?', a: 'Oui, nous intervenons sur les façades en pierre de la région avec des mortiers et enduits adaptés au bâti ancien.' },
+    ],
+  },
+  {
+    slug: 'carrelage-tours',
+    name: 'Carrelage',
+    title: 'Carrelage et dallage à Tours',
+    metaTitle: 'Carreleur à Tours (37) – Carrelage, dallage, travertin',
+    metaDescription: 'Pose de carrelage à Tours et en Indre-et-Loire : sols intérieurs, faïence, terrasses, dallage en travertin, marches et margelles. Devis gratuit O.M.T.',
+    ogImage: '/images/og/og-carrelage.jpg',
+    icon: 'carrelage',
+    excerpt: 'Carrelage intérieur, faïence, terrasses et dallage en pierre naturelle comme le travertin : des finitions nettes, dedans comme dehors.',
+    intro: [
+      'Parce qu\'un beau sol se prépare dès le gros œuvre, O.M.T réalise aussi vos travaux de carrelage et de dallage à Tours et dans toute l\'Indre-et-Loire, de la chape jusqu\'aux joints.',
+      'Carrelage grand format, faïence, pierre naturelle ou travertin posé en opus : nous vous conseillons sur le choix des matériaux et soignons chaque coupe, chaque niveau et chaque finition.',
+    ],
+    items: [
+      { title: 'Carrelage intérieur', text: 'Pose de carrelage au sol, grands formats, imitation parquet, plinthes assorties.' },
+      { title: 'Faïence & salle de bain', text: 'Murs de douche, crédences, habillages de baignoire et douches à l\'italienne.' },
+      { title: 'Terrasses extérieures', text: 'Carrelage et dalles extérieures sur chape ou sur plots, pentes d\'écoulement maîtrisées.' },
+      { title: 'Pierre naturelle & travertin', text: 'Dallage en travertin posé en opus, allées, perrons et plages de piscine.' },
+      { title: 'Marches, seuils & margelles', text: 'Escaliers, nez de marche, seuils de porte et margelles en pierre ou en carrelage.' },
+      { title: 'Préparation des supports', text: 'Chape, ragréage, étanchéité sous carrelage pour une pose durable.' },
+    ],
+    faq: [
+      { q: 'Posez-vous du travertin et de la pierre naturelle ?', a: 'Oui, nous posons régulièrement du travertin en opus, à l\'intérieur comme à l\'extérieur : sols, terrasses, allées, marches et margelles.' },
+      { q: 'Réalisez-vous la chape avant la pose du carrelage ?', a: 'Oui. En tant que maçon, nous préparons nous-mêmes le support (chape, ragréage, étanchéité), ce qui garantit une pose plane et durable.' },
+      { q: 'Intervenez-vous pour une salle de bain complète ?', a: 'Nous réalisons la maçonnerie, la chape, la faïence et le carrelage de votre salle de bain. Contactez-nous pour en discuter.' },
     ],
   },
 ]

@@ -6,8 +6,9 @@ const year = new Date().getFullYear()
   <footer class="footer bricks">
     <div class="container footer__grid">
       <div>
-        <img src="/images/logo-omt-dark.webp" alt="O.M.T – Oliveira Maçonnerie Tours" width="200" height="131" loading="lazy" class="footer__logo">
-        <p><strong>O.M.T – {{ site.fullName }}</strong>, artisan maçon à Tours : maçonnerie générale, terrassement et ravalement de façade en Indre-et-Loire et dans les régions voisines.</p>
+        <img src="/images/logo-omt.webp" alt="O.M.T Maçonnerie – Oliveira Maçonnerie Tours" width="220" height="113" loading="lazy" class="footer__logo">
+        <p><strong>O.M.T – {{ site.fullName }}</strong>, artisan maçon à Tours : maçonnerie générale, terrassement, ravalement de façade et carrelage en Indre-et-Loire et dans les régions voisines.</p>
+        <p class="footer__slogan">« {{ site.slogan }} »</p>
       </div>
       <div>
         <p class="footer__title">Prestations</p>
@@ -44,9 +45,10 @@ const year = new Date().getFullYear()
 </template>
 
 <style scoped>
-.footer { color: #cfcfcf; padding-top: 64px; font-size: .95rem; }
+.footer { background-color: var(--black); color: #cfcfcf; padding-top: 64px; font-size: .95rem; }
 .footer__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.3fr; gap: 40px; }
-.footer__logo { width: 180px; margin-bottom: 16px; }
+.footer__logo { width: 220px; margin-bottom: 16px; }
+.footer__slogan { color: var(--orange); font-style: italic; font-weight: 600; }
 .footer__title { color: var(--white); font-weight: 700; text-transform: uppercase; letter-spacing: .12em; font-size: .85rem; border-bottom: 2px solid var(--orange); display: inline-block; padding-bottom: 6px; }
 .footer ul { list-style: none; padding: 0; margin: 0; }
 .footer li { margin-bottom: 10px; }

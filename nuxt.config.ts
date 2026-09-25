@@ -24,7 +24,7 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       meta: [
-        { name: 'theme-color', content: '#2b2b2b' },
+        { name: 'theme-color', content: '#0b0b0b' },
         { name: 'format-detection', content: 'telephone=yes' },
         { name: 'geo.region', content: 'FR-37' },
         { name: 'geo.placename', content: 'Tours' },

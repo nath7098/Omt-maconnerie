@@ -47,7 +47,8 @@ usePageSeo({
         </p>
         <p>
           Nous réalisons également vos <NuxtLink to="/terrassement-tours">travaux de terrassement</NuxtLink> et vos
-          <NuxtLink to="/ravalement-facade-tours">ravalements de façade</NuxtLink> dans tout le département
+          <NuxtLink to="/ravalement-facade-tours">ravalements de façade</NuxtLink> et vos
+          <NuxtLink to="/carrelage-tours">travaux de carrelage</NuxtLink> dans tout le département
           (Amboise, Chinon, Loches, Montlouis-sur-Loire…), ainsi que dans les départements voisins du
           Loir-et-Cher, du Loiret, de l'Indre, du Maine-et-Loire et de la Sarthe.
         </p>

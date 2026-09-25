@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const faq = [
-  { q: 'Quels travaux réalise O.M.T ?', a: 'O.M.T (Oliveira Maçonnerie Tours) est une entreprise de maçonnerie basée à Tours. Nous réalisons la maçonnerie générale (construction, extension, murs, dalles, ouvertures, rénovation), le terrassement et le ravalement de façade.' },
+  { q: 'Quels travaux réalise O.M.T ?', a: 'O.M.T (Oliveira Maçonnerie Tours) est une entreprise de maçonnerie basée à Tours. Nous réalisons la maçonnerie générale (construction, extension, murs, dalles, ouvertures, rénovation), le terrassement, le ravalement de façade et le carrelage (dont le travertin).' },
   { q: 'Dans quelles villes intervenez-vous ?', a: 'Nous intervenons à Tours et dans toute l\'Indre-et-Loire (Joué-lès-Tours, Saint-Cyr-sur-Loire, Saint-Avertin, Chambray-lès-Tours, Amboise…), ainsi que dans la région Centre-Val de Loire et en Pays de la Loire.' },
   { q: 'Le devis est-il gratuit ?', a: `Oui, le déplacement et le devis sont gratuits et sans engagement. Appelez le ${site.phone} ou écrivez-nous via le formulaire de contact.` },
   { q: 'Travaillez-vous pour les particuliers et les professionnels ?', a: 'Oui, nous intervenons pour les particuliers, les professionnels, les syndics et les collectivités, en neuf comme en rénovation.' },
@@ -8,7 +8,7 @@ const faq = [
 
 usePageSeo({
   title: 'O.M.T Oliveira Maçonnerie – Maçon à Tours (37)',
-  description: 'O.M.T – Oliveira Maçonnerie Tours : maçonnerie, terrassement et ravalement de façade à Tours et en Indre-et-Loire. Devis gratuit au 07 65 51 29 66.',
+  description: 'O.M.T – Oliveira Maçonnerie Tours : maçonnerie, terrassement, ravalement de façade et carrelage à Tours (37). Devis gratuit au 07 65 51 29 66.',
   path: '/',
   schema: [faqSchema(faq)],
 })
@@ -17,7 +17,7 @@ const strengths = [
   { title: 'Artisan local', text: 'Une entreprise tourangelle qui connaît le bâti de la région, du tuffeau aux constructions récentes.' },
   { title: 'Devis gratuit', text: 'Visite sur place, conseils et devis détaillé gratuits et sans engagement.' },
   { title: 'Travail soigné', text: 'Respect des règles de l\'art, des délais annoncés et un chantier laissé propre.' },
-  { title: 'Un seul interlocuteur', text: 'Du terrassement aux finitions de façade, un suivi de A à Z.' },
+  { title: 'Un seul interlocuteur', text: 'Du terrassement au carrelage et à la façade, un suivi de A à Z.' },
 ]
 </script>
 
@@ -30,8 +30,9 @@ const strengths = [
           <h1>Votre <span class="accent">maçon à Tours</span> pour construire, rénover et embellir</h1>
           <p class="lead">
             <strong>O.M.T – Oliveira Maçonnerie Tours</strong> réalise vos travaux de <NuxtLink to="/maconnerie-tours">maçonnerie</NuxtLink>,
-            de <NuxtLink to="/terrassement-tours">terrassement</NuxtLink> et de
-            <NuxtLink to="/ravalement-facade-tours">ravalement de façade</NuxtLink> à Tours, en Indre-et-Loire,
+            de <NuxtLink to="/terrassement-tours">terrassement</NuxtLink>, de
+            <NuxtLink to="/ravalement-facade-tours">ravalement de façade</NuxtLink> et de
+            <NuxtLink to="/carrelage-tours">carrelage</NuxtLink> à Tours, en Indre-et-Loire,
             en région Centre-Val de Loire et en Pays de la Loire.
           </p>
           <div class="hero__actions">
@@ -61,8 +62,8 @@ const strengths = [
       <div class="container">
         <div class="section-head section-head--center">
           <p class="eyebrow">Nos prestations</p>
-          <h2>Maçonnerie, terrassement et ravalement de façade</h2>
-          <p class="lead">Trois savoir-faire complémentaires pour mener votre projet du terrain nu jusqu'à la façade finie.</p>
+          <h2>Maçonnerie, terrassement, ravalement de façade et carrelage</h2>
+          <p class="lead">Quatre savoir-faire complémentaires pour mener votre projet du terrain nu jusqu'aux finitions.</p>
         </div>
         <ServiceCards />
       </div>
@@ -101,7 +102,7 @@ const strengths = [
           <p class="eyebrow">Réalisations</p>
           <h2>Nos derniers chantiers</h2>
         </div>
-        <RealisationGallery :limit="6" />
+        <RealisationGallery :limit="4" />
         <p v-if="realisations.length" class="center"><NuxtLink to="/realisations" class="btn btn--dark">Voir toutes nos réalisations</NuxtLink></p>
       </div>
     </section>

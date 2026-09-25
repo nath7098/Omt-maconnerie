@@ -8,7 +8,7 @@
  * Le texte « alt » est important pour Google Images : décrivez précisément la photo
  * (type de travaux + ville), par ex. « Mur de clôture en parpaing enduit à Joué-lès-Tours ».
  */
-export type ServiceName = 'Maçonnerie' | 'Terrassement' | 'Ravalement de façade'
+export type ServiceName = 'Maçonnerie' | 'Terrassement' | 'Ravalement de façade' | 'Carrelage'
 
 export interface Realisation {
   src: string
@@ -82,7 +82,7 @@ export const realisations: Realisation[] = [
     alt: 'Terrasse d\'entrée en dallage travertin avec margelles devant une maison à façade en pierre',
     title: 'Terrasse d\'entrée en travertin',
     description: 'Création d\'un perron maçonné habillé de dalles en travertin, avec margelles et seuil de porte assortis.',
-    services: ['Maçonnerie'],
+    services: ['Carrelage', 'Maçonnerie'],
     width: 1080,
     height: 810,
   },
@@ -91,7 +91,7 @@ export const realisations: Realisation[] = [
     alt: 'Allée de jardin courbe et marches en dalles de travertin',
     title: 'Allée et marches en travertin',
     description: 'Allée de jardin aux formes courbes et marches en travertin, posées sur chape pour un rendu durable et élégant.',
-    services: ['Maçonnerie'],
+    services: ['Carrelage', 'Maçonnerie'],
     width: 1200,
     height: 1600,
   },

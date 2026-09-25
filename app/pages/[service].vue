@@ -104,7 +104,7 @@ usePageSeo({
           <p class="eyebrow">Découvrez aussi</p>
           <h2>Nos autres savoir-faire</h2>
         </div>
-        <div class="grid grid--2">
+        <div class="grid grid--3">
           <NuxtLink v-for="o in others" :key="o.slug" :to="`/${o.slug}`" class="card other">
             <h3>{{ o.title }}</h3>
             <p>{{ o.excerpt }}</p>
