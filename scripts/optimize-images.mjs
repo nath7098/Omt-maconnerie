@@ -11,7 +11,7 @@ for (const f of readdirSync(dir)) {
   if (!f.endsWith('.webp') || f.endsWith('-thumb.webp')) continue
   const out = dir + f.replace('.webp', '-thumb.webp')
   if (existsSync(out)) continue
-  await sharp(dir + f).resize({ width: 800 }).webp({ quality: 72 }).toFile(out)
+  await sharp(dir + f).resize({ width: 800, withoutEnlargement: true }).webp({ quality: 66, effort: 6 }).toFile(out)
   console.log('miniature :', out)
 }
 

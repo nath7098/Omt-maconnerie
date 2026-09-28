@@ -5,7 +5,8 @@ if (!service) throw createError({ statusCode: 404, statusMessage: 'Page introuva
 
 const path = `/${service.slug}`
 const others = services.filter(s => s.slug !== service.slug)
-const photos = realisations.some(r => r.services.includes(service.name as ServiceName))
+const photoCount = realisations.filter(r => r.services.includes(service.name as ServiceName)).length
+const photos = photoCount > 0
 
 usePageSeo({
   title: service.metaTitle,
@@ -83,8 +84,8 @@ usePageSeo({
           <p class="eyebrow">Réalisations</p>
           <h2>Nos chantiers de {{ service.name.toLowerCase() }}</h2>
         </div>
-        <RealisationGallery :service="service.name" />
-        <p class="more"><NuxtLink to="/realisations" class="btn btn--dark">Toutes nos réalisations <AppIcon name="arrow" /></NuxtLink></p>
+        <RealisationGallery :service="service.name" :limit="8" />
+        <p class="more"><NuxtLink to="/realisations" class="btn btn--dark">Voir nos {{ realisations.length }} réalisations <AppIcon name="arrow" /></NuxtLink></p>
       </div>
     </section>
 
