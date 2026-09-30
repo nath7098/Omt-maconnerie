@@ -21,7 +21,7 @@ const links = [
     </div>
     <div class="container header__inner">
       <NuxtLink to="/" class="header__logo" aria-label="O.M.T – Oliveira Maçonnerie Tours, accueil">
-        <img src="/images/logo-omt-header.webp" alt="Logo O.M.T Maçonnerie – Oliveira Maçonnerie Tours" width="141" height="72">
+        <img src="/images/logo-omt-header.webp" alt="Logo OMT Maçonnerie – Oliveira Maçonnerie Tours" width="130" height="80">
       </NuxtLink>
 
       <nav :class="['nav', { 'nav--open': open }]" aria-label="Navigation principale">
@@ -51,7 +51,7 @@ const links = [
 .topbar svg { width: 15px; height: 15px; color: var(--orange); }
 .header__inner { display: flex; align-items: center; gap: 12px; padding-block: 10px; }
 .header__logo { flex: none; }
-.header__logo img { width: 141px; height: auto; }
+.header__logo img { width: 130px; height: auto; }
 .nav { margin-left: auto; }
 .nav ul { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; }
 .nav__link { display: block; padding: 8px 6px; text-decoration: none; font-weight: 600; font-size: .95rem; border-radius: 6px; white-space: nowrap; }
